@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="总结," />
+  <meta name="keywords" content="C++,学习笔记," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="阅前说明 这是一篇水文 没有东西 在不写一篇，估计博客又要被荒废了。。。。">
-<meta name="keywords" content="总结">
+<meta name="description" content="阅前说明 以此作为前言，当我写下标题后面的“一”时，我的感觉是不久之后又会断更。。。 昨天逛了一圈校招，发现我现在的状态恐怕啥工作都干不了 用我刚学的属于，我学的是 什么都知道什么都不会专业 本连载（？）计划写一写我最近学习C++ STL的一些学习笔记 看着上学期写的那篇重装系统教程（一）。。。。 我希望这个别断了吧 :） 废话到此为止">
+<meta name="keywords" content="C++,学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="啥都没有系列">
-<meta property="og:url" content="https://zzk176.github.io/2017/03/10/2017-03-10/index.html">
+<meta property="og:title" content="C++学习——STL (一)">
+<meta property="og:url" content="https://zzk176.github.io/2017/10/26/2017-10-26/index.html">
 <meta property="og:site_name" content="从放弃到重拾">
-<meta property="og:description" content="阅前说明 这是一篇水文 没有东西 在不写一篇，估计博客又要被荒废了。。。。">
+<meta property="og:description" content="阅前说明 以此作为前言，当我写下标题后面的“一”时，我的感觉是不久之后又会断更。。。 昨天逛了一圈校招，发现我现在的状态恐怕啥工作都干不了 用我刚学的属于，我学的是 什么都知道什么都不会专业 本连载（？）计划写一写我最近学习C++ STL的一些学习笔记 看着上学期写的那篇重装系统教程（一）。。。。 我希望这个别断了吧 :） 废话到此为止">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-04-29T14:53:10.000Z">
+<meta property="og:updated_time" content="2017-10-26T13:18:10.067Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="啥都没有系列">
-<meta name="twitter:description" content="阅前说明 这是一篇水文 没有东西 在不写一篇，估计博客又要被荒废了。。。。">
+<meta name="twitter:title" content="C++学习——STL (一)">
+<meta name="twitter:description" content="阅前说明 以此作为前言，当我写下标题后面的“一”时，我的感觉是不久之后又会断更。。。 昨天逛了一圈校招，发现我现在的状态恐怕啥工作都干不了 用我刚学的属于，我学的是 什么都知道什么都不会专业 本连载（？）计划写一写我最近学习C++ STL的一些学习笔记 看着上学期写的那篇重装系统教程（一）。。。。 我希望这个别断了吧 :） 废话到此为止">
 
 
 
@@ -120,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="https://zzk176.github.io/2017/03/10/2017-03-10/"/>
+  <link rel="canonical" href="https://zzk176.github.io/2017/10/26/2017-10-26/"/>
 
 
 
 
 
-  <title>啥都没有系列 | 从放弃到重拾</title>
+  <title>C++学习——STL (一) | 从放弃到重拾</title>
   
 
 
@@ -263,7 +263,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zzk176.github.io/2017/03/10/2017-03-10/">
+    <link itemprop="mainEntityOfPage" href="https://zzk176.github.io/2017/10/26/2017-10-26/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="No regret">
@@ -280,7 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">啥都没有系列</h1>
+          <h1 class="post-title" itemprop="name headline">C++学习——STL (一)</h1>
         
 
         <div class="post-meta">
@@ -292,8 +292,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-10T22:55:08+08:00">
-                2017-03-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-26T19:58:28+08:00">
+                2017-10-26
               </time>
             
 
@@ -302,6 +302,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/C/" itemprop="url" rel="index">
+                    <span itemprop="name">C++</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -336,16 +358,69 @@
 
       
         <h4 id="阅前说明"><a href="#阅前说明" class="headerlink" title="阅前说明"></a>阅前说明</h4><ul>
-<li>这是一篇水文</li>
-<li>没有东西</li>
-<li>在不写一篇，估计博客又要被荒废了。。。。<a id="more"></a>
+<li>以此作为前言，当我写下标题后面的“一”时，我的感觉是不久之后又会断更。。。</li>
+<li>昨天逛了一圈校招，发现我现在的状态恐怕啥工作都干不了</li>
+<li>用我刚学的属于，我学的是 什么都知道什么都不会专业</li>
+<li>本连载（？）计划写一写我最近学习C++ STL的一些学习笔记</li>
+<li>看着上学期写的那篇重装系统教程（一）。。。。 我希望这个别断了吧 :）</li>
+<li>废话到此为止<a id="more"></a>
 </li>
 </ul>
-<h4 id="沉迷开发，无法自拔"><a href="#沉迷开发，无法自拔" class="headerlink" title="沉迷开发，无法自拔"></a>沉迷开发，无法自拔</h4><ul>
-<li>这几天没写文章是因为一直没开Windows，加上这两天都是早早的就上床睡了。。。包括今天，总结一下这几天吧。前两天如题。。。沉迷于开发，也说不上沉迷吧，前天在群里看到一张图，IOS技术栈的思维导图，我才发现我花了半个学期所学的知识最末端的一个小分支，连树的一个枝干都不到。而我这三周以来都在干什么， 从前几篇文章可以看出，我的学习有一次和大一一样开始游荡不定了，应该可以说是浮躁了吧。感谢那张图，我现在稍微有些清醒，我应该继续坚持开发下去，每次学习，即使心中总是会有一百个不愿意去做，但每次做的时候都会有新的认识，这个我无法否认。我一直在思考一个问题，我到底想要干什么，学了如此之多，却没有任何深入的地方，甚至到现在也写不出一篇技术博客。。。 所以，不如趁此机会坚持开发。</li>
-<li>今天我真的很想去开发，但为MAC装了一晚上的系统，至此终于弄完。自从大一就进入了IT，所有让我帮忙的人我都尽我所能的去做，这是对我能力的一种锻炼。但我也拒绝过两次，第一次是对方总是不放心我，这让我太愤怒了。第二次也许是受第一次以后的影响，在网上报修的人我都是等对方先联系我，然后我才去给他解决，所以这次这个人3周没有联系我，索性我就直接删了这单。每次修电脑都给我不少新的认识，学习到了不少。</li>
+<h4 id="STL-概述"><a href="#STL-概述" class="headerlink" title="STL 概述"></a>STL 概述</h4><ul>
+<li><p>STL 是 C++ 标准模板库，主要包含 字符串(string)+容器+迭代器+算法</p>
+</li>
+<li><p>STL 具有以下优点</p>
+<ul>
+<li>高可重用性(大多采用模板类，模板函数实现)</li>
+<li>高性能</li>
+<li>高移植性</li>
+<li>跨平台</li>
 </ul>
-<h4 id="不想写了，-赶紧睡觉了。"><a href="#不想写了，-赶紧睡觉了。" class="headerlink" title="不想写了， 赶紧睡觉了。"></a>不想写了， 赶紧睡觉了。</h4><h3 id="不修仙了，-开始养生"><a href="#不修仙了，-开始养生" class="headerlink" title="不修仙了， 开始养生"></a>不修仙了， 开始养生</h3>
+</li>
+<li>通过封装底层过程，可以专注于实现业务逻辑</li>
+</ul>
+<h4 id="字符串（string）"><a href="#字符串（string）" class="headerlink" title="字符串（string）"></a>字符串（string）</h4><ul>
+<li><p>可以当作承载字符的容器，比char* 更安全</p>
+</li>
+<li><p>构造函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">string();// 默认构造函数</div><div class="line">string(const string &amp;str);// 拷贝构造函数</div><div class="line">string(const char* s); string(n, char s);// 带参数的构造函数</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="字符串的常用操作"><a href="#字符串的常用操作" class="headerlink" title="字符串的常用操作"></a>字符串的常用操作</h4><h5 id="取字符串中的字符"><a href="#取字符串中的字符" class="headerlink" title="取字符串中的字符"></a>取字符串中的字符</h5><pre><code>- 通过下标 str[10]， 这种方法不会处理越界问题，会产生越界的错误
+- 通过 at 方法， 和下标方法相同，但对越界是会抛出异常(out of range)
+- 同样也可以通过上述方法获取到字符并且修改，但所使用的方法不是同一个方法，取字符时返回值有const修饰
+</code></pre><h5 id="打印字符串"><a href="#打印字符串" class="headerlink" title="打印字符串"></a>打印字符串</h5><pre><code>- cout 不支持对 string 类型直接打印，需先转化成 const char*
+</code></pre><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cout</span> &lt;&lt; str.c_str();	<span class="comment">// 转化为 const char*</span></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">copy</span><span class="params">(<span class="keyword">char</span> *s, <span class="keyword">int</span> n, <span class="keyword">int</span> pos=<span class="number">0</span>)</span></span>; <span class="comment">// 将字符串拷贝到 char* 指向的地址空间</span></div><div class="line">str = <span class="string">"1234567"</span>; <span class="keyword">char</span> c[<span class="number">7</span>] = &#123;<span class="number">0</span>&#125;;</div><div class="line">str.copy(c, <span class="number">6</span>); <span class="comment">// 注意拷贝是不要越界 *** unsafe</span></div></pre></td></tr></table></figure>
+<h5 id="赋值"><a href="#赋值" class="headerlink" title="赋值"></a>赋值</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">string</span> str = (<span class="keyword">const</span> <span class="built_in">string</span> &amp;s); <span class="comment">// 直接等号赋值</span></div><div class="line">assign(<span class="keyword">const</span> <span class="keyword">char</span>*); assign(<span class="keyword">const</span> <span class="built_in">string</span> &amp;);</div><div class="line">assign(<span class="keyword">const</span> <span class="keyword">char</span>*, <span class="keyword">int</span>); <span class="comment">// 复制前n个字符</span></div><div class="line">assign(<span class="keyword">int</span>, <span class="keyword">char</span>) <span class="comment">// 复制n个字符c</span></div></pre></td></tr></table></figure>
+<h5 id="连接"><a href="#连接" class="headerlink" title="连接"></a>连接</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">str1 += str2;</div><div class="line">str.append(<span class="keyword">const</span> <span class="keyword">char</span> *);</div><div class="line">...</div></pre></td></tr></table></figure>
+<h5 id="比较-compare"><a href="#比较-compare" class="headerlink" title="比较 compare"></a>比较 compare</h5><pre><code>- 相等返回 0；
+- str1&gt;str2 返回 1； // 从头开始比较字母，至比出大小为止（ascii码）
+</code></pre><h5 id="子串-substr-int-pos-int-n"><a href="#子串-substr-int-pos-int-n" class="headerlink" title="子串 substr(int pos, int n);"></a>子串 substr(int pos, int n);</h5><h5 id="查找"><a href="#查找" class="headerlink" title="查找"></a>查找</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">char</span> c, <span class="keyword">int</span> pos)</span></span>;</div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">find</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span>*, <span class="keyword">int</span> pos)</span></span>;</div><div class="line"><span class="comment">// 反向查找使用 rfind ， 查找失败返回 -1</span></div></pre></td></tr></table></figure>
+<h5 id="其他类似的操作"><a href="#其他类似的操作" class="headerlink" title="其他类似的操作"></a>其他类似的操作</h5><ul>
+<li>插入 insert</li>
+<li>删除 erase</li>
+<li>替换 replace</li>
+<li>交换 swip</li>
+</ul>
+<h4 id="string-和-wstring-的区别与转换"><a href="#string-和-wstring-的区别与转换" class="headerlink" title="string 和 wstring 的区别与转换"></a>string 和 wstring 的区别与转换</h4><ul>
+<li><p>区别</p>
+<ul>
+<li>string 对char* 进行管理，一个字符一个字节，汉字两个字节， ascii编码</li>
+<li>wstring 对 wchar_t* 管理， 一个字符2个字节，汉字两个字节， unicode编码</li>
+</ul>
+</li>
+<li><p>转换</p>
+<ul>
+<li><p>windows API</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">WideCharToMultiByte();</div><div class="line">MultiByteToWideChar();</div></pre></td></tr></table></figure>
+</li>
+<li><p>ATL中 CA2W类与CW2A类 或 A2W宏与W2A宏</p>
+</li>
+<li>…</li>
+</ul>
+</li>
+</ul>
+
       
     </div>
     
@@ -362,7 +437,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/总结/" rel="tag"># 总结</a>
+            <a href="/tags/C/" rel="tag"># C++</a>
+          
+            <a href="/tags/学习笔记/" rel="tag"># 学习笔记</a>
           
         </div>
       
@@ -375,8 +452,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/03/06/17-03-06/" rel="next" title="PHP的总结">
-                <i class="fa fa-chevron-left"></i> PHP的总结
+              <a href="/2017/04/29/2017-04-29/" rel="next" title="价值20元的装系统教程（一）">
+                <i class="fa fa-chevron-left"></i> 价值20元的装系统教程（一）
               </a>
             
           </div>
@@ -384,10 +461,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/03/25/17-03-25/" rel="prev" title="CentOS安装记录">
-                CentOS安装记录 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -538,7 +611,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#阅前说明"><span class="nav-number">1.</span> <span class="nav-text">阅前说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#沉迷开发，无法自拔"><span class="nav-number">2.</span> <span class="nav-text">沉迷开发，无法自拔</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#不想写了，-赶紧睡觉了。"><span class="nav-number">3.</span> <span class="nav-text">不想写了， 赶紧睡觉了。</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#不修仙了，-开始养生"><span class="nav-number"></span> <span class="nav-text">不修仙了， 开始养生</span></a></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#阅前说明"><span class="nav-number">1.</span> <span class="nav-text">阅前说明</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#STL-概述"><span class="nav-number">2.</span> <span class="nav-text">STL 概述</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串（string）"><span class="nav-number">3.</span> <span class="nav-text">字符串（string）</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#字符串的常用操作"><span class="nav-number">4.</span> <span class="nav-text">字符串的常用操作</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#取字符串中的字符"><span class="nav-number">4.1.</span> <span class="nav-text">取字符串中的字符</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#打印字符串"><span class="nav-number">4.2.</span> <span class="nav-text">打印字符串</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#赋值"><span class="nav-number">4.3.</span> <span class="nav-text">赋值</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#连接"><span class="nav-number">4.4.</span> <span class="nav-text">连接</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#比较-compare"><span class="nav-number">4.5.</span> <span class="nav-text">比较 compare</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#子串-substr-int-pos-int-n"><span class="nav-number">4.6.</span> <span class="nav-text">子串 substr(int pos, int n);</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#查找"><span class="nav-number">4.7.</span> <span class="nav-text">查找</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#其他类似的操作"><span class="nav-number">4.8.</span> <span class="nav-text">其他类似的操作</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#string-和-wstring-的区别与转换"><span class="nav-number">5.</span> <span class="nav-text">string 和 wstring 的区别与转换</span></a></li></ol></div>
             
 
           </div>
