@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="从放弃到重拾">
 <meta property="og:description" content="阅前说明 今天没有断更  ┐(´∇｀)┌ 本文介绍 STL中的容器vector及迭代器 今天貌似除了学习了这个我居然想不起来还做得什么事。。。。 还是那句话。。。。 我希望这个别断了 :） 废话到此为止">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-27T14:51:18.547Z">
+<meta property="og:updated_time" content="2017-10-27T14:54:13.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++学习——STL Vector (二)">
 <meta name="twitter:description" content="阅前说明 今天没有断更  ┐(´∇｀)┌ 本文介绍 STL中的容器vector及迭代器 今天貌似除了学习了这个我居然想不起来还做得什么事。。。。 还是那句话。。。。 我希望这个别断了 :） 废话到此为止">
@@ -396,7 +396,7 @@
 <h5 id="vector-赋值"><a href="#vector-赋值" class="headerlink" title="vector 赋值"></a>vector 赋值</h5><ul>
 <li>类似于 string， assign， =， swap</li>
 </ul>
-<h5 id="vector-移除"><a href="#vector-移除" class="headerlink" title="vector 移除"></a>vector 移除</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">vector</span>.clear(); <span class="comment">// 清空</span></div><div class="line"><span class="built_in">vector</span>.erase(begin, end); <span class="comment">// begin end 为迭代器, 返回下一个元素的值</span></div></pre></td></tr></table></figure>
+<h5 id="vector-移除"><a href="#vector-移除" class="headerlink" title="vector 移除"></a>vector 移除</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">vector</span>.clear(); <span class="comment">// 清空</span></div><div class="line"><span class="built_in">vector</span>.erase(it_begin, it_end); <span class="comment">// begin end 为迭代器, 返回下一个元素的位置（迭代器）</span></div><div class="line"><span class="built_in">vector</span>.erase(it_pos); <span class="comment">// pos 为迭代器, 返回下一个元素的位置（迭代器）</span></div></pre></td></tr></table></figure>
 <h5 id="vector-其他操作"><a href="#vector-其他操作" class="headerlink" title="vector 其他操作"></a>vector 其他操作</h5><figure class="highlight cpp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">vector</span>.size(); <span class="comment">// 放回元素个数</span></div><div class="line"><span class="built_in">vector</span>.empty(); <span class="comment">// 是否为空</span></div><div class="line"><span class="built_in">vector</span>.resize(); <span class="comment">// 重新指定长度， 多默认填充，少丢弃</span></div><div class="line"><span class="built_in">vector</span>.insert(); <span class="comment">// 插入</span></div></pre></td></tr></table></figure>
       
     </div>
